@@ -1,0 +1,58 @@
+    @import 'bootstrap.css';
+    .miImagenBA {
+        opacity: 0.5;
+    }
+    
+    .miH6 {
+        font-size: x-small;
+    }
+    
+    .miH5 {
+        font-size: small;
+    }
+    
+    .miCuadro {
+        font-size: larger;
+        resize: none;
+    }
+    
+    .miLink {
+        text-decoration-style: dotted;
+    }
+    
+    .miBuenosAires {
+        font-size: x-small;
+    }
+    
+    .miFooter {
+        background: -moz-linear-gradient(to right, rgb(1, 13, 49), rgb(2, 31, 85));
+        opacity: 0.75;
+    }
+    
+    .miEscalaForm {
+        transform: scale(0.8);
+    }
+    
+    .miEscalaCards {
+        transform: scale(0.8);
+    }
+    
+    .miBotonEnviar {
+        background-color: rgb(60, 175, 7);
+    }
+    
+    .misBotonesCardsWhite {
+        color: white;
+        font-weight: bold;
+    }
+    
+    .misBotonesCardsBlack {
+        color: black;
+        font-weight: bold;
+    }
+    
+    .miNavLink {
+        color: white;
+        font-size: small;
+        text-decoration: none;
+    }
