@@ -71,3 +71,31 @@
         align-content: space-between;
         display: flex;
     }
+    
+    .miEstiloInfo {
+        border-color: blue;
+    }
+    
+    .miEstiloSelected {
+        border-color: gold;
+    }
+    
+    .miTitulo {
+        font-size: large;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .miTextoTarjeta {
+        font-size: medium;
+        font-weight: normal;
+        text-align: center;
+        color: black;
+    }
+    
+    .miTextoTarjetaGris {
+        font-size: medium;
+        font-weight: normal;
+        text-align: center;
+        color: darkgray;
+    }
