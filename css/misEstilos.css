@@ -56,3 +56,7 @@
         font-size: small;
         text-decoration: none;
     }
+    
+    .ocultarSeccion {
+        display: none
+    }
