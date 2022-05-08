@@ -27,14 +27,18 @@
     .miFooter {
         background: -moz-linear-gradient(to right, rgb(1, 13, 49), rgb(2, 31, 85));
         opacity: 0.75;
+        justify-items: center;
+        justify-content: center;
+        align-content: space-between;
+        display: flex;
     }
     
     .miEscalaForm {
-        transform: scale(0.8);
+        transform: scale(0.9);
     }
     
     .miEscalaCards {
-        transform: scale(0.8);
+        transform: scale(0.9);
     }
     
     .miBotonEnviar {
@@ -59,4 +63,11 @@
     
     .ocultarSeccion {
         display: none
+    }
+    
+    .miHeader {
+        background-color: rgb(85, 84, 84);
+        opacity: 0.75;
+        align-content: space-between;
+        display: flex;
     }
