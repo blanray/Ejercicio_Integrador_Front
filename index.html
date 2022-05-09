@@ -82,9 +82,8 @@
                     <div class="card h-100">
                         <img src="./img/steve.jpg" class="card-img-top" alt="SJobs">
                         <div class="card-body">
-                            <button class="btn btn-warning misBotonesCardsBlack">JavaScript                      
-                                </button>
-                            <button class="btn btn-info misBotonesCardsWhite">React</button>
+                            <span class="badge rounded-pill bg-warning text-dark">JavaScript</span>
+                            <span class="badge rounded-pill bg-primary">React</span>
                             <h5 class="card-title">Steve Jobs</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eaque similique sed alias illum eum nisi quam iste tempora iure quod aliquid, ex beatae quo voluptas, culpa enim corrupti accusantium.</p>
                         </div>
@@ -94,9 +93,8 @@
                     <div class="card h-100">
                         <img src="./img/bill.jpg" class="card-img-top" alt="BGates">
                         <div class="card-body">
-                            <button class="btn btn-warning misBotonesCardsBlack">JavaScript                      
-                                </button>
-                            <button class="btn btn-info misBotonesCardsWhite">React</button>
+                            <span class="badge rounded-pill bg-warning text-dark">JavaScript</span>
+                            <span class="badge rounded-pill bg-primary">React</span>
                             <h5 class="card-title">Bill Gates</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dicta eius fuga aspernatur illo eligendi dolorum commodi explicabo architecto et facilis autem, esse est dolorem tenetur doloremque asperiores labore. Aut?</p>
                         </div>
@@ -107,9 +105,8 @@
                     <div class="card h-100">
                         <img src="./img/ada.jpeg" class="card-img-top" alt="ALovelace">
                         <div class="card-body">
-                            <button class="btn btn-dark misBotonesCardsWhite">Negocios                      
-                                </button>
-                            <button class="btn btn-danger misBotonesCardsWhite">Startups</button>
+                            <span class="badge rounded-pill bg-secondary">Negocios</span>
+                            <span class="badge rounded-pill bg-danger">Startups</span>
                             <h5 class="card-title">Ada Lovelace</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae officiis ad eaque exercitationem libero velit asperiores mollitia pariatur atque voluptatum veniam at ea soluta perferendis, perspiciatis provident, odio porro
                                 rem.
@@ -200,7 +197,43 @@
                 </div>
             </div>
         </div>
+        <div class="container mt-2">
+            <div class="col text-center">
+                <h5 class="miH5 fw-light"> VENTA </h5>
+                <h3 class="fs-3 fw-bold">VALOR DE TICKET $200</h3>
+            </div>
+        </div>
+        <div class="row ">
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                    </div>
 
+                    <input type="text" class="form-control mt-3 mb-4 g-3" placeholder="Correo" aria-label="Correo">
+                    <div class="mb-3 col-6">
+                        <label for="exampleInputEmail1" class="form-label">Cantidad</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label class="form-label">Categoria</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected value="1">Estudiante</option>
+                            <option value="2">Trainee</option>
+                            <option value="3">Junior</option>
+                         </select>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" id="disabledTextInput" class="form-control miTotalAPagar" placeholder="Total a pagar: $ " disabled>
+                    </div>
+                    <button type="submit" class="btn btn-success miBotonEnviar">Borrar</button>
+                    <button type="submit" class="btn btn-success miBotonEnviar">Resumen</button>
+                </div>
+            </form>
+
+
+        </div>
     </div>
 
     <div class="container-fluid pagination miFooter">
