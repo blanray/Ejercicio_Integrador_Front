@@ -9,3 +9,8 @@ document.getElementById("comprarTicket").onclick = function() {
 
     ocultarCuerpo();
 }
+
+document.getElementById("comprarTicket2").onclick = function() {
+
+    ocultarCuerpo();
+}
