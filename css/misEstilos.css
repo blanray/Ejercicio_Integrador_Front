@@ -107,3 +107,8 @@
         color: darkblue;
         font-weight: bold;
     }
+    
+    .miBorde {
+        border-color: coral;
+        background-color: azure;
+    }

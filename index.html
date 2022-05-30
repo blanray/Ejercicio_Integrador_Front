@@ -166,7 +166,7 @@
 
         <div class="row row-cols-3">
             <div class="col">
-                <div class="card h-100 miEstiloInfo">
+                <div class="card h-100 miEstiloInfo" id="miTarjetaEstudiante">
                     <div class="card-body">
                         <h5 class="miTitulo">Estudiante</h5>
                         <h5 class="miTextoTarjeta">Tienen un descuento</h5>
@@ -177,7 +177,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 miEstiloInfo">
+                <div class="card h-100 miEstiloInfo" id="miTarjetaTrainee">
                     <div class="card-body">
                         <h5 class="miTitulo">Trainee</h5>
                         <h5 class="miTextoTarjeta">Tienen un descuento</h5>
@@ -187,7 +187,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 miEstiloInfo">
+                <div class="card h-100 miEstiloInfo" id="miTarjetaJunior">
                     <div class="card-body">
                         <h5 class="miTitulo">Junior</h5>
                         <h5 class="miTextoTarjeta">Tienen un descuento</h5>
@@ -203,38 +203,45 @@
                 <h3 class="fs-3 fw-bold">VALOR DE TICKET $200</h3>
             </div>
         </div>
-        <div class="row ">
-            <form>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
-                    </div>
-
-                    <input type="text" class="form-control mt-3 mb-4 g-3" placeholder="Correo" aria-label="Correo">
-                    <div class="mb-3 col-6">
-                        <label for="exampleInputEmail1" class="form-label">Cantidad</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <label class="form-label">Categoria</label>
-                        <select class="form-select" aria-label="Default select example">
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="mi-nombre">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="mi-apellido">
+            </div>
+            <div class="row">
+                <input type="text" class="form-control mt-3 ms-3" placeholder="Correo" aria-label="Correo" id="mi-email">
+            </div>
+            <div class="row">
+                <div class="col mt-2">
+                    <label class="form-label" for="mi-cantidad">Cantidad</label>
+                    <input type="number" inputmode="numeric" id="mi-cantidad" name="mi-cantidad" class="form-control" placeholder="Cantidad" step="1" min="0">
+                </div>
+                <div class="col mt-2">
+                    <label class="form-label">Categoria</label>
+                    <select class="form-select" aria-label="Default select example" id="mi-selector">
                             <option selected value="1">Estudiante</option>
                             <option value="2">Trainee</option>
                             <option value="3">Junior</option>
                          </select>
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" id="disabledTextInput" class="form-control miTotalAPagar" placeholder="Total a pagar: $ " disabled>
-                    </div>
-                    <button type="submit" class="btn btn-success miBotonEnviar">Borrar</button>
-                    <button type="submit" class="btn btn-success miBotonEnviar">Resumen</button>
                 </div>
-            </form>
+            </div>
+            <div class="row mt-2 ms-1">
+                <input type="text" id="disabledTextInput" class="form-control miTotalAPagar" placeholder="Total a pagar: $ " disabled>
+                <div class="row">
+                    <div class="col mt-2">
+                        <button type="submit" class="btn btn-success miBotonEnviar" id="mi-borrar">Borrar</button>
+                    </div>
+                    <div class="col mt-2">
 
-
+                        <button type="submit" class="btn btn-success miBotonEnviar" id="mi-resumen">Resumen</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
 
     <div class="container-fluid pagination miFooter">
         <nav class="navbar navbar-expand navbar-light">
