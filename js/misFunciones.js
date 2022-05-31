@@ -1,21 +1,32 @@
+//Los botones Comprar Ticket muestran la seccion de compra y ocultan el cuerpo principal alternativamente
+
+//Este boton en la nav-bar superior siempre queda visible y al presionarse se vuelve a la pagina principal
 var comprarTicket = document.getElementById("comprar-ticket");
 comprarTicket.addEventListener('click', ocultarCuerpo);
 comprarTicket.addEventListener('click', cambiarCard);
+comprarTicket.addEventListener('click', borrarForm);
+
+//no uso query selector por las dudas la compatibilidad, pero los botones hacen lo mismo
 
 var comprarTicket2 = document.getElementById("comprar-ticket2");
 comprarTicket2.addEventListener('click', ocultarCuerpo);
 comprarTicket2.addEventListener('click', cambiarCard);
+comprarTicket2.addEventListener('click', borrarForm);
 
+//Cuando se cambia el selector, se actualiza la card resaltada
 var miSelector = document.getElementById("mi-selector");
 miSelector.addEventListener('change', cambiarCard);
 miSelector.addEventListener('change', borrarResumen);
 
+//Al presionar el boton Resumen, se calcula el total a pagar
 var miResumen = document.getElementById("mi-resumen");
 miResumen.addEventListener('click', calcularPrecio);
 
+//Limpiar el forumlario al presionar el boton Borrar
 var miBorrar = document.getElementById("mi-borrar");
 miBorrar.addEventListener('click', borrarForm);
 
+//Funcion para alternar la clase que oculta una seccion, dependiendo si ya esta en la lista de clases del elemento o no
 function ocultarCuerpo() {
 
     document.getElementById("cuerpoPrincipal").classList.toggle("ocultarSeccion");
@@ -23,6 +34,7 @@ function ocultarCuerpo() {
 
 }
 
+//Funcion para resaltar la tarjeta que esta seleccionada en el selector
 function cambiarCard() {
 
     var miSelectorTemp = document.getElementById("mi-selector");
@@ -49,6 +61,7 @@ function cambiarCard() {
 
 }
 
+//Funcion que calcula el total a pagar
 function calcularPrecio() {
 
     var miSelectorTemp2 = document.getElementById("mi-selector");
@@ -75,6 +88,7 @@ function calcularPrecio() {
 
 }
 
+//Funcion para limpiar el formulario completo
 function borrarForm() {
 
     document.getElementById("disabledTextInput").value = ("Total a pagar $: ");
@@ -85,6 +99,7 @@ function borrarForm() {
 
 }
 
+//Funcion para borrar solo el total a pagar cuando se actualiza el selector en medio de una compra
 function borrarResumen() {
 
     document.getElementById("disabledTextInput").value = ("Total a pagar $: ");
